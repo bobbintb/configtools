@@ -1,0 +1,5 @@
+#!/bin/sh
+key=$1
+value=$2
+config_file=$3
+sed -i "s/^$key=.*/$key=$value/" "$config_file"
