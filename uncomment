@@ -1,0 +1,4 @@
+#!/bin/sh
+config_file=$1
+key=$2
+sed -i "s/^[#\s]*$key=/$key=/" "$config_file"
